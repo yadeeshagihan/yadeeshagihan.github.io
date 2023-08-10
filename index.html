@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -146,10 +146,10 @@
                     </div>
                 </div>
                 <div class="contact-right">
-                    <form>
-                        <input type="text" name="Name" placeholder="name" required>
+                    <form action="my.php" method="POST">
+                        <input type="text" name="name" placeholder="name" required>
                         <input type="email" name="email" placeholder="your email" required>
-                        <textarea name="Message" rows="6" placeholder="your Message"></textarea>
+                        <textarea name="message" rows="6" placeholder="your Message"></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
                     </form>
                 </div>
@@ -199,9 +199,9 @@
         var form = document.querySelector("form");
 
         form.addEventListener("submit", function (event) {
-            var nameInput = document.querySelector("input[name='Name']");
+            var nameInput = document.querySelector("input[name='name']");
             var emailInput = document.querySelector("input[name='email']");
-            var messageInput = document.querySelector("textarea[name='Message']");
+            var messageInput = document.querySelector("textarea[name='message']");
 
             var isValid = true;
 
@@ -308,3 +308,5 @@
     </script>
 </body>
 </html>
+
+
